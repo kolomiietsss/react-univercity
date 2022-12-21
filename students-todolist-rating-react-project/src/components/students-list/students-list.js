@@ -4,8 +4,9 @@ import './students-list.css';
 const StudentsList = ({data}) => {
 
     const elements = data.map(item => {
+        const {id,...itemProps} = item
         return(
-            <StudentsListItem {...item}/>
+            <StudentsListItem key={id} {...itemProps}/>
         )
     }) ;
 

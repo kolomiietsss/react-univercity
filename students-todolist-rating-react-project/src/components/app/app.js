@@ -8,10 +8,10 @@ import StudentsAddForm from "../students-add-form/students-add-form";
 function App(){
 
     const data = [
-        {name: "Артем Коломієць", score: 80, increase: false},
-        {name: "Олександр Волков", score: 100, increase: false},
-        {name: "Дашуня", score: 99, increase: true},
-        {name: "Юля", score: 99, increase: false}
+        {id: 1, name: "Артем Коломієць", score: 80, scholarship: false},
+        {id: 2, name: "Олександр Волков", score: 100, scholarship: false},
+        {id: 3, name: "Дашуня", score: 99, scholarship: true},
+        {id: 4, name: "Юля", score: 99, scholarship: false}
     ];
 
     return (

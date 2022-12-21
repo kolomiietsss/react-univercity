@@ -1,10 +1,10 @@
 import './students-list-item.css';
 
-const StudentsListItem = ({name, score, increase}) => {
+const StudentsListItem = ({name, score, scholarship}) => {
 
     let classNames = "list-group-item d-flex justify-content-between";
-    if(increase){
-        classNames += ' increase'
+    if(scholarship){
+        classNames += ' scholarship'
     }
 
     return (
