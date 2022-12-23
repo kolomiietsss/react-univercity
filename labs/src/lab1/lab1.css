@@ -1,0 +1,37 @@
+.task1>tr>td{
+    border: 2px solid !important;
+}
+
+.viewed_content {
+    width: 100%;
+    margin-top: 25px
+}
+
+.viewed_price {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500
+}
+
+.viewed_price {
+    color: red;
+}
+
+.viewed_price span {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 8px
+}
+
+.viewed_price span::after {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 1px;
+    background: #8d8d8d;
+    content: ''
+}
