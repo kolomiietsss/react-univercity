@@ -10,7 +10,7 @@ const Task4 = () => {
 
     function Check() {
         if (count === 9) {
-            alert("You lose")
+            alert("You looser")
             setResult(number);
             setCount(10);
 
@@ -27,7 +27,7 @@ const Task4 = () => {
                 setResult(number);
             } else {
                 setCount(count + 1);
-                if (input > number) {
+                if (number > input) {
                     setWord([
                         ...word,
                         {
@@ -35,6 +35,7 @@ const Task4 = () => {
                             message: "N > " + input
                         }
                     ])
+                    console.log(number)
                     console.log(input)
                 } else {
                     setWord([
